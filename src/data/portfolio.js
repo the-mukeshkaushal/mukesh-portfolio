@@ -9,7 +9,7 @@ export const personalInfo = {
   role: "Aspiring Software Engineer & Frontend Developer",
   status: "Open to Internships & Junior Roles",
   location: "India",
-  email: "mukeshkaushal12345678@gmai.com", // Edit with your preferred contact email
+  email: "mukeshkaushal.tech@gmai.com", // Edit with your preferred contact email
   social: {
     github: "https://github.com/the-mukeshkaushal", // Edit with your GitHub URL
     linkedin: "https://www.linkedin.com/in/mukesh-kaushal-2a4012329/", // Edit with your LinkedIn URL
@@ -36,7 +36,7 @@ export const personalInfo = {
 export const aboutData = {
   title: "A little about me.",
   paragraphs: [
-    "I am an aspiring frontend developer and software engineering student with a strong passion for turning creative ideas into functional, intuitive, and performant web applications.",
+    "I am an aspiring Full Stack developer and software engineering student with a strong passion for turning creative ideas into functional, intuitive, and performant web applications.",
     "My focus centers on frontend engineering with React, developing structured, reusable UI components, and managing predictable application state using Redux. I craft layouts with Tailwind CSS, aiming for clean code and seamless responsive behavior across devices.",
     "Beyond frontend development, I am continuously deepening my computer science fundamentals in Data Structures & Algorithms with Java and C++, while actively exploring backend technologies and API design to evolve into a versatile full-stack engineer.",
   ],
