@@ -69,7 +69,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
         scrolled
           ? 'bg-[#0B0D0C]/85 backdrop-blur-xl border-b border-[#232926]/90 py-3 shadow-xl shadow-black/30'
           : 'bg-transparent py-5 sm:py-6'
@@ -170,12 +170,11 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-            className="md:hidden border-b border-[#232926] bg-[#0B0D0C]/95 backdrop-blur-2xl overflow-hidden shadow-2xl"
-          >
+          className="md:hidden relative z-[100] border-b border-[#232926] bg-[#0B0D0C] backdrop-blur-2xl shadow-2xl"          >
             <div className="px-6 py-6 flex flex-col gap-3 max-w-md mx-auto">
               <div className="text-[11px] font-mono tracking-widest uppercase text-[#6F736E] pb-2 border-b border-[#1E2321] flex items-center justify-between">
                 <span>Navigation Menu</span>
